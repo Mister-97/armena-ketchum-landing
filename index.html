@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armena Ketchum - Financial Freedom Architect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Armena Ketchum - Financial Freedom Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,12 +27,20 @@
             box-sizing: border-box;
         }
 
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             font-family: 'DM Sans', sans-serif;
             color: var(--text-dark);
             background: var(--warm-white);
             overflow-x: hidden;
             line-height: 1.6;
+            width: 100%;
+            min-width: 100%;
+            position: relative;
         }
 
         /* Animated Background Pattern */
@@ -63,13 +72,13 @@
             z-index: 1000;
             background: rgba(250, 248, 245, 0.95);
             backdrop-filter: blur(20px);
-            padding: 1.5rem 5%;
+            padding: 1.5rem 1rem;
             transition: all 0.3s ease;
             border-bottom: 1px solid rgba(212, 165, 116, 0.1);
         }
 
         nav.scrolled {
-            padding: 1rem 5%;
+            padding: 1rem;
             box-shadow: var(--shadow-soft);
         }
 
@@ -79,6 +88,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 1rem;
         }
 
         .logo {
@@ -138,7 +148,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 8rem 5% 4rem;
+            padding: 8rem 1rem 4rem;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -155,6 +165,8 @@
             align-items: center;
             position: relative;
             z-index: 1;
+            width: 100%;
+            padding: 0 1rem;
         }
 
         .hero-text {
@@ -330,15 +342,17 @@
 
         /* Services Section */
         .services {
-            padding: 5rem 5%;
+            padding: 5rem 1rem;
             background: white;
             position: relative;
+            width: 100%;
         }
 
         .section-header {
             text-align: center;
             max-width: 800px;
             margin: 0 auto 4rem;
+            padding: 0 1rem;
         }
 
         h2 {
@@ -358,8 +372,9 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            padding: 0 1rem;
         }
 
         .service-card {
@@ -577,8 +592,9 @@
 
         /* Testimonial Section */
         .testimonials {
-            padding: 5rem 5%;
+            padding: 5rem 1rem;
             background: var(--warm-white);
+            width: 100%;
         }
 
         .testimonial-card {
@@ -586,7 +602,7 @@
             margin: 0 auto;
             background: white;
             border-radius: 30px;
-            padding: 3rem;
+            padding: 2rem;
             box-shadow: var(--shadow-soft);
             position: relative;
         }
@@ -642,11 +658,12 @@
 
         /* CTA Section */
         .cta-section {
-            padding: 5rem 5%;
+            padding: 5rem 1rem;
             background: linear-gradient(135deg, var(--deep-navy) 0%, var(--rich-teal) 100%);
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
 
         .cta-section::before {
@@ -700,8 +717,9 @@
         footer {
             background: var(--deep-navy);
             color: white;
-            padding: 3rem 5%;
+            padding: 3rem 1rem;
             text-align: center;
+            width: 100%;
         }
 
         .footer-content {
@@ -749,9 +767,14 @@
 
         /* Responsive Design */
         @media (max-width: 968px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+            
             .hero-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
+                padding: 0;
             }
 
             .hero-visual {
@@ -774,11 +797,24 @@
             .nav-links {
                 display: none;
             }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
         }
 
         @media (max-width: 640px) {
             .services-grid {
                 grid-template-columns: 1fr;
+                padding: 0;
+            }
+            
+            .service-card {
+                margin: 0 1rem;
             }
 
             .hero-stats {
@@ -787,6 +823,37 @@
 
             .modal-content {
                 padding: 2rem;
+                width: 95%;
+                margin: 0 auto;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+            
+            .quote-icon {
+                font-size: 3rem;
+                top: -10px;
+                left: 20px;
+            }
+            
+            .cta-button-large {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
             }
         }
     </style>
@@ -812,7 +879,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <div class="badge">✨ Financial Freedom Specialist</div>
+                <div class="badge">Financial Freedom Specialist</div>
                 <h1>I'm <span>Armena Ketchum</span><br>Your Path to Financial Security Starts Here</h1>
                 <p class="hero-description">
                     With decades of expertise in debt mediation, retirement planning, and annuity strategies, 
