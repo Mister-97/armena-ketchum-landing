@@ -568,6 +568,23 @@
                 transform: translateX(-50%);
             }
         }
+
+        /* Faster scrolling on mobile devices */
+@media (max-width: 768px) {
+  .carrier-track {
+    animation: scroll-right-mobile 25s linear infinite;
+  }
+}
+
+@keyframes scroll-right-mobile {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
         
         .carrier-list {
             display: flex;
@@ -1717,6 +1734,7 @@
                 }
             }
         });
+        
 
         // Intersection Observer for animations
         const observerOptions = {
