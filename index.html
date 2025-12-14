@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
+    
+    <!-- Primary Meta Tags -->
     <title>Armena Ketchum - Retirement Specialist & Financial Broker</title>
+    <meta name="title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta name="description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Over 10 years of experience helping clients achieve financial freedom.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mister-97.github.io/armena-ketchum-landing/">
+    <meta property="og:title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta property="og:description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Purpose Over Passion!">
+    <meta property="og:image" content="https://i.imgur.com/x9K0Xag.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mister-97.github.io/armena-ketchum-landing/">
+    <meta property="twitter:title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta property="twitter:description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Purpose Over Passion!">
+    <meta property="twitter:image" content="https://i.imgur.com/x9K0Xag.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -568,23 +586,28 @@
                 transform: translateX(-50%);
             }
         }
-
+        
         /* Faster scrolling on mobile devices */
-@media (max-width: 768px) {
-  .carrier-track {
-    animation: scroll-right-mobile 25s linear infinite;
-  }
-}
-
-@keyframes scroll-right-mobile {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
+        @media only screen and (max-width: 768px) {
+            .carrier-track {
+                animation: scroll-right-mobile 20s linear infinite !important;
+            }
+            
+            @keyframes scroll-right-mobile {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .carrier-track {
+                animation: scroll-right-mobile 15s linear infinite !important;
+            }
+        }
         
         .carrier-list {
             display: flex;
@@ -1207,14 +1230,7 @@
                 font-size: 0.75rem;
                 padding: 0.4rem 0.8rem;
             }
-}
-        @media (max-width: 768px) {
-    .carrier-track {
-        animation: scroll-right 25s linear infinite;
-    }
-}
-
-
+        }
     </style>
 </head>
 <body>
@@ -1328,7 +1344,7 @@
                     <li>Term life insurance</li>
                     <li>Index universal life</li>
                     <li>Executive business planning</li>
-                    <li>Trusted insurance partners</li>
+                    <li>Estate preservation strategies</li>
                 </ul>
             </div>
         </div>
@@ -1734,7 +1750,6 @@
                 }
             }
         });
-        
 
         // Intersection Observer for animations
         const observerOptions = {
