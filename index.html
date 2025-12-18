@@ -1,1 +1,1777 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Primary Meta Tags -->
+    <title>Armena Ketchum - Retirement Specialist & Financial Broker</title>
+    <meta name="title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta name="description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Over 10 years of experience helping clients achieve financial freedom.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mister-97.github.io/armena-ketchum-landing/">
+    <meta property="og:title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta property="og:description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Purpose Over Passion!">
+    <meta property="og:image" content="https://i.imgur.com/x9K0Xag.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mister-97.github.io/armena-ketchum-landing/">
+    <meta property="twitter:title" content="Armena Ketchum - Retirement Specialist & Financial Broker">
+    <meta property="twitter:description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Purpose Over Passion!">
+    <meta property="twitter:image" content="https://i.imgur.com/x9K0Xag.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #D4A574;
+            --deep-navy: #0F1B2E;
+            --rich-teal: #1C5560;
+            --warm-white: #FAF8F5;
+            --accent-coral: #E86B5E;
+            --text-dark: #1A1A1A;
+            --gradient-gold: linear-gradient(135deg, #D4A574 0%, #E8C19E 100%);
+            --shadow-soft: 0 10px 40px rgba(15, 27, 46, 0.08);
+            --shadow-hover: 0 20px 60px rgba(15, 27, 46, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-dark);
+            background: var(--warm-white);
+            overflow-x: hidden;
+            line-height: 1.6;
+            width: 100%;
+            min-width: 100%;
+            position: relative;
+        }
+
+        /* Animated Background Pattern */
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 0;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, var(--primary-gold) 35px, var(--primary-gold) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--rich-teal) 35px, var(--rich-teal) 70px);
+            animation: float 30s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-10px, -10px) scale(1.02); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1.5rem 1rem;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+        }
+
+        nav.scrolled {
+            padding: 1rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--deep-navy);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: var(--gradient-gold);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 1rem 4rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, rgba(250, 248, 245, 0.9) 0%, rgba(212, 165, 116, 0.05) 100%);
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        .hero-text {
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(212, 165, 116, 0.1);
+            color: var(--primary-gold);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            color: var(--deep-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 span {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--rich-teal);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--rich-teal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .portrait-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .portrait-frame {
+            position: relative;
+            background: var(--gradient-gold);
+            padding: 5px;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morphing 8s ease-in-out infinite;
+            box-shadow: 0 30px 60px rgba(212, 165, 116, 0.3);
+        }
+
+        @keyframes morphing {
+            0%, 100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+            50% {
+                border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+            }
+        }
+
+        .portrait {
+            width: 100%;
+            height: 500px;
+            border-radius: inherit;
+            position: relative;
+            overflow: hidden;
+            background-image: url('https://i.imgur.com/glxR7pD.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--warm-white);
+        }
+
+        /* Fallback for image loading */
+        .portrait-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        .portrait::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(28, 85, 96, 0.05) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .portrait::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 1rem;
+            background: white;
+            position: relative;
+            width: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--rich-teal);
+        }
+
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        /* Business Opportunity Card - Horizontal Layout */
+        .business-card {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--rich-teal) 100%);
+            border-radius: 20px;
+            padding: 2rem 2.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        
+        .business-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .business-card:hover::before {
+            left: 100%;
+        }
+        
+        .business-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(15, 27, 46, 0.3);
+        }
+        
+        .business-card-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
+        }
+        
+        .business-card-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .business-card-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+        
+        .business-card-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .business-card-text p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.125rem;
+        }
+        
+        .business-card-arrow {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            animation: arrow-bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes arrow-bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        
+        @media (max-width: 968px) {
+            .business-card {
+                padding: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .business-card-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .business-card-text h3 {
+                font-size: 1.5rem;
+            }
+            
+            .business-card-text p {
+                font-size: 1rem;
+            }
+            
+            .business-card-arrow {
+                transform: rotate(90deg);
+            }
+        }
+        
+        /* Carrier Banner Styles */
+        .carrier-section {
+            padding: 3rem 0;
+            background: white;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carrier-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+        
+        .carrier-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .carrier-header p {
+            color: var(--rich-teal);
+            font-size: 1.125rem;
+        }
+        
+        .carrier-banner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(250, 248, 245, 1) 0%, rgba(250, 248, 245, 0) 5%, rgba(250, 248, 245, 0) 95%, rgba(250, 248, 245, 1) 100%);
+        }
+        
+        .carrier-track {
+            display: flex;
+            animation: scroll-right 35s linear infinite;
+        }
+        
+        @keyframes scroll-right {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Faster scrolling on mobile devices */
+        @media only screen and (max-width: 768px) {
+            .carrier-track {
+                animation: scroll-right-mobile 35s linear infinite !important;
+            }
+            
+            @keyframes scroll-right-mobile {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .carrier-track {
+                animation: scroll-right-mobile 35s linear infinite !important;
+            }
+        }
+        
+        .carrier-list {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            padding: 2rem 0;
+            white-space: nowrap;
+        }
+        
+        .carrier-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: fit-content;
+            position: relative;
+        }
+        
+        .carrier-logo {
+            height: 50px;
+            width: auto;
+            max-width: 140px;
+            object-fit: contain;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            cursor: default;
+            filter: grayscale(20%);
+        }
+        
+        .carrier-logo:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+        
+        /* Placeholder style for companies without logos yet */
+        .carrier-placeholder {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--rich-teal) 0%, var(--deep-navy) 100%);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            cursor: default;
+            box-shadow: 0 2px 8px rgba(15, 27, 46, 0.1);
+        }
+        
+        .carrier-placeholder:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(15, 27, 46, 0.2);
+        }
+        
+        /* Separator dots between carriers */
+        .carrier-separator {
+            width: 4px;
+            height: 4px;
+            background: var(--primary-gold);
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+        
+        /* Add gradient overlays for smooth edges */
+        .carrier-banner::before,
+        .carrier-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .carrier-banner::before {
+            left: 0;
+            background: linear-gradient(90deg, white 0%, transparent 100%);
+        }
+        
+        .carrier-banner::after {
+            right: 0;
+            background: linear-gradient(90deg, transparent 0%, white 100%);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-gold);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            animation: float-icon 3s ease-in-out infinite;
+        }
+        
+        .service-icon svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        @keyframes float-icon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--rich-teal);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-gold);
+            font-weight: bold;
+        }
+
+        /* Selection Modal */
+        .selection-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 27, 46, 0.9);
+            z-index: 2000;
+            animation: fadeIn 0.3s ease;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            position: relative;
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+            margin: 2rem auto;
+            animation: slideUp 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Mobile-specific modal adjustments */
+        @media (max-width: 640px) {
+            .modal-content {
+                margin: 1rem auto;
+                padding: 1.5rem;
+                width: 95%;
+                max-height: 85vh;
+                border-radius: 20px;
+            }
+            
+            .selection-modal {
+                padding-top: 0;
+            }
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+        }
+
+        .modal-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--deep-navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .modal-header p {
+            color: var(--rich-teal);
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .service-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 0;
+        }
+
+        .option-checkbox {
+            background: var(--warm-white);
+            padding: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            border: 2px solid transparent;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .option-checkbox:hover {
+            background: rgba(212, 165, 116, 0.1);
+            border-color: rgba(212, 165, 116, 0.3);
+        }
+
+        .option-checkbox:active {
+            transform: scale(0.98);
+        }
+
+        .option-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            accent-color: var(--primary-gold);
+            margin-top: 2px;
+            cursor: pointer;
+        }
+
+        .option-checkbox label {
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: var(--deep-navy);
+            flex: 1;
+            line-height: 1.4;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        .option-checkbox label strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 640px) {
+            .option-checkbox {
+                padding: 0.875rem;
+            }
+            
+            .option-checkbox label {
+                font-size: 0.875rem;
+            }
+            
+            .option-checkbox label strong {
+                font-size: 0.95rem;
+            }
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(212, 165, 116, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            min-width: 120px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: white;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: var(--warm-white);
+            color: var(--deep-navy);
+            border: 2px solid rgba(15, 27, 46, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(15, 27, 46, 0.05);
+            border-color: rgba(15, 27, 46, 0.2);
+        }
+
+        .btn-secondary:active {
+            transform: scale(0.98);
+        }
+        
+        @media (max-width: 480px) {
+            .modal-actions {
+                flex-direction: column-reverse;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
+        /* Testimonial Section */
+        .testimonials {
+            padding: 5rem 1rem;
+            background: var(--warm-white);
+            width: 100%;
+        }
+
+        .testimonial-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 2rem;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: -20px;
+            left: 40px;
+            font-size: 5rem;
+            color: var(--primary-gold);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .author-info h4 {
+            color: var(--deep-navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--rich-teal);
+            font-size: 0.875rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--rich-teal) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 60%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button-large {
+            display: inline-block;
+            background: var(--gradient-gold);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-navy);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-gold);
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(212, 165, 116, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-gold);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 0;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .portrait-container {
+                max-width: 350px;
+            }
+
+            .portrait {
+                height: 350px;
+                background-position: center top;
+            }
+            
+            .portrait-img {
+                object-position: center top;
+            }
+
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                padding: 0;
+            }
+            
+            .service-card {
+                margin: 0 1rem;
+            }
+
+            .hero-stats {
+                justify-content: space-around;
+            }
+
+            .modal-content {
+                padding: 2rem;
+                width: 95%;
+                margin: 0 auto;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+            
+            .quote-icon {
+                font-size: 3rem;
+                top: -10px;
+                left: 20px;
+            }
+            
+            .cta-button-large {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Pattern -->
+    <div class="background-pattern"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Armena Ketchum</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="https://calendly.com/moneyministriesphp" target="_blank">Start Your Business</a>
+                <a href="#testimonials">Success Stories</a>
+                <a href="https://calendly.com/moneyministriesphp" target="_blank" class="cta-button">Schedule Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">Retirement Specialist & Financial Broker</div>
+                <h1>I'm <span>Armena Ketchum</span><br>Your Path to Financial Security Starts Here</h1>
+                <p class="hero-description">
+                    With decades of expertise in debt mediation, retirement planning, and annuity strategies, 
+                    I transform financial challenges into opportunities for lasting wealth.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$2M+</span>
+                        <span class="stat-label">Debt Resolved</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Lives Changed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-container">
+                    <div class="portrait-frame">
+                        <div class="portrait">
+                            <img src="https://i.imgur.com/glxR7pD.jpeg" alt="Armena Ketchum - Financial Expert" class="portrait-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Transform Your Financial Future</h2>
+            <p class="section-subtitle">Expert guidance tailored to your unique financial journey</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="window.open('https://www.sm.phpdebtsolutions.com/links/40755/1506?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnYoJPMvmliXf4AuWhtSYGwoBwkBvs2QNTweKx9egmdjibuG2rho2nySxTeVs_aem_ML0wSO77bgGgm0SVFZ6HMA', '_blank')">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                    </svg>
+                </div>
+                <h3>Debt Mediator</h3>
+                <p class="service-description">
+                    Strategic debt resolution that protects your assets while negotiating optimal settlements with creditors.
+                </p>
+                <ul class="service-features">
+                    <li>Creditor negotiation & settlement</li>
+                    <li>Asset protection strategies</li>
+                    <li>Credit score rehabilitation</li>
+                    <li>Legal support & advocacy</li>
+                </ul>
+            </div>
+
+            <div class="service-card" onclick="openServiceModal('retirement')">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                    </svg>
+                </div>
+                <h3>Retirement & Annuity Specialist</h3>
+                <p class="service-description">
+                    Comprehensive retirement planning and annuity strategies that ensure your golden years are secure with guaranteed lifetime income.
+                </p>
+                <ul class="service-features">
+                    <li>401(k) & IRA optimization</li>
+                    <li>Fixed & variable annuity analysis</li>
+                    <li>Lifetime income planning</li>
+                    <li>Social Security maximization</li>
+                </ul>
+            </div>
+
+            <div class="service-card" onclick="openServiceModal('insurance')">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91c4.59-1.15 8-5.86 8-10.91V5l-8-3z"/>
+                    </svg>
+                </div>
+                <h3>Life Insurance Broker / Agent</h3>
+                <p class="service-description">
+                    Expert life insurance solutions tailored to protect your family's future and build lasting financial security.
+                </p>
+                <ul class="service-features">
+                    <li>Term life insurance</li>
+                    <li>Index universal life</li>
+                    <li>Executive business planning</li>
+                    <li>Estate preservation strategies</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Business Opportunity Card -->
+        <div class="business-card" onclick="window.open('https://calendly.com/moneyministriesphp', '_blank')">
+            <div class="business-card-content">
+                <div class="business-card-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                    </svg>
+                </div>
+                <div class="business-card-text">
+                    <h3>Looking to Start a Business in the Financial Industry?</h3>
+                    <p>Join our team and build your own successful financial services practice with expert mentorship and support</p>
+                </div>
+            </div>
+            <div class="business-card-arrow">→</div>
+        </div>
+    </section>
+    
+    <!-- Insurance Carriers Banner -->
+    <section class="carrier-section">
+        <div class="carrier-header">
+            <h3>Trusted Insurance Partners</h3>
+            <p>Working with the industry's most reliable carriers</p>
+        </div>
+        <div class="carrier-banner">
+            <div class="carrier-track">
+                <!-- First set of carriers -->
+                <div class="carrier-list">
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Aetna_logo.svg/2560px-Aetna_logo.svg.png" alt="Aetna" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/AIG_new_logo.svg/2560px-AIG_new_logo.svg.png" alt="AIG" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.retireguide.com/wp-content/uploads/american-equity-logo-1.png" alt="American Equity" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_812,w_3000,x_0,y_0/f_auto/q_auto:best/v1725384445/tenants/5d79b121-15d2-4144-814c-739ffcbbaa86/94c8fcfec6cd458484ef4789b42f25c4/AN-Awareness-Logo-Stacked-2-Color-CMYK-01.png" alt="American National" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://main-d82d3e5016fd440ca94acfe9639b11dd.cloud.amsdal.com/api/objects/file-download/b11c2692cfcc4a7d9e21a8f5dbba32d1/?version_id=LATEST" alt="Athene" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/F%26G_Annuities_%26_Life.png/1200px-F%26G_Annuities_%26_Life.png" alt="F&G Annuities & Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Foresters_Financial_Logo.svg/2560px-Foresters_Financial_Logo.svg.png" alt="Foresters" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.globalatlantic.com/sites/globalatlantic/files/2025-04/Global_Atlantic_LOGO_RGB_FINAL_0.png" alt="Forethought" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/John_Hancock_Insurance_Logo.svg" alt="John Hancock" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.benefitfocus.com/sites/default/files/styles/large_webp/public/2021-04/Lincoln_National_Corporation_logo.svg.png.webp?itok=TQAdqnrG" alt="Lincoln Financial Group" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://trdfinancialagents.com/wp-content/uploads/2024/09/mediator-logo-1.jpg" alt="Debt Mediator" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://1000logos.net/wp-content/uploads/2023/01/Mutual-of-Omaha-logo.png" alt="Mutual of Omaha" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.nationallife.com/-/media/Images/NationalLife/public/home-page/home-feature/NLG-logo.png" alt="National Life Group" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://images.seeklogo.com/logo-png/37/2/national-western-life-insurance-company-logo-png_seeklogo-378531.png" alt="NWL" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Nationwide_Insurance.svg/1200px-Nationwide_Insurance.svg.png" alt="Nationwide" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.lifeinsure.com/wp-content/uploads/2015/09/North-American-Company.png" alt="North American" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://1000logos.net/wp-content/uploads/2023/01/Pacific-Life-logo.png" alt="Pacific Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://cdn.prod.website-files.com/624dd0d2f145c5198620f300/62cd97cacc33540d4ca2d7e8_5ad1539d0a0bff36dd80c506c5c109d2_logo.png" alt="Silac" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://play-lh.googleusercontent.com/bYRrz9jQcP0Xjh1tpRqq5oQ22i7ELUa6qttyTBushRostK19Z989wySV1qscMJ1e3-U7=w600-h300-pc0xffffff-pd" alt="The Standard" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.universallifepr.com/ULICOPortal/img/logo_ulico.png?6861" alt="Universal Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                </div>
+                <!-- Duplicate set for continuous scrolling -->
+                <div class="carrier-list">
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Aetna_logo.svg/2560px-Aetna_logo.svg.png" alt="Aetna" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/AIG_new_logo.svg/2560px-AIG_new_logo.svg.png" alt="AIG" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.retireguide.com/wp-content/uploads/american-equity-logo-1.png" alt="American Equity" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_812,w_3000,x_0,y_0/f_auto/q_auto:best/v1725384445/tenants/5d79b121-15d2-4144-814c-739ffcbbaa86/94c8fcfec6cd458484ef4789b42f25c4/AN-Awareness-Logo-Stacked-2-Color-CMYK-01.png" alt="American National" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://main-d82d3e5016fd440ca94acfe9639b11dd.cloud.amsdal.com/api/objects/file-download/b11c2692cfcc4a7d9e21a8f5dbba32d1/?version_id=LATEST" alt="Athene" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/F%26G_Annuities_%26_Life.png/1200px-F%26G_Annuities_%26_Life.png" alt="F&G Annuities & Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Foresters_Financial_Logo.svg/2560px-Foresters_Financial_Logo.svg.png" alt="Foresters" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.globalatlantic.com/sites/globalatlantic/files/2025-04/Global_Atlantic_LOGO_RGB_FINAL_0.png" alt="Forethought" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/John_Hancock_Insurance_Logo.svg" alt="John Hancock" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.benefitfocus.com/sites/default/files/styles/large_webp/public/2021-04/Lincoln_National_Corporation_logo.svg.png.webp?itok=TQAdqnrG" alt="Lincoln Financial Group" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://trdfinancialagents.com/wp-content/uploads/2024/09/mediator-logo-1.jpg" alt="Debt Mediator" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://1000logos.net/wp-content/uploads/2023/01/Mutual-of-Omaha-logo.png" alt="Mutual of Omaha" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.nationallife.com/-/media/Images/NationalLife/public/home-page/home-feature/NLG-logo.png" alt="National Life Group" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://images.seeklogo.com/logo-png/37/2/national-western-life-insurance-company-logo-png_seeklogo-378531.png" alt="NWL" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Nationwide_Insurance.svg/1200px-Nationwide_Insurance.svg.png" alt="Nationwide" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.lifeinsure.com/wp-content/uploads/2015/09/North-American-Company.png" alt="North American" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://1000logos.net/wp-content/uploads/2023/01/Pacific-Life-logo.png" alt="Pacific Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://cdn.prod.website-files.com/624dd0d2f145c5198620f300/62cd97cacc33540d4ca2d7e8_5ad1539d0a0bff36dd80c506c5c109d2_logo.png" alt="Silac" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://play-lh.googleusercontent.com/bYRrz9jQcP0Xjh1tpRqq5oQ22i7ELUa6qttyTBushRostK19Z989wySV1qscMJ1e3-U7=w600-h300-pc0xffffff-pd" alt="The Standard" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                    <div class="carrier-item">
+                        <img src="https://www.universallifepr.com/ULICOPortal/img/logo_ulico.png?6861" alt="Universal Life" class="carrier-logo">
+                    </div>
+                    <span class="carrier-separator"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2>Client Success Stories</h2>
+            <p class="section-subtitle">Real results from real people</p>
+        </div>
+        <div class="testimonial-card">
+            <span class="quote-icon">"</span>
+            <p class="testimonial-text">
+                Armena transformed our financial outlook completely. Her debt mediation expertise saved us from bankruptcy, 
+                and her retirement planning has given us confidence in our future. She's not just a financial advisor; 
+                she's a life-changer who truly cares about her clients' success.
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">JM</div>
+                <div class="author-info">
+                    <h4>Jennifer & Michael Thompson</h4>
+                    <p>Retired Business Owners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2>Ready to Take Control of Your Financial Future?</h2>
+            <p>Let's create a personalized strategy that turns your financial goals into reality</p>
+            <a href="https://calendly.com/moneyministriesphp" target="_blank" class="cta-button-large">Schedule Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Armena Ketchum Financial</div>
+            <p class="footer-text">Your trusted partner in financial freedom</p>
+            <div class="social-links">
+                <a href="/cdn-cgi/l/email-protection#dbb6b4b5bea2b6b2b5b2a8afa9b2bea8abb3ab9bbcb6bab2b7f5b8b4b6" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/armena-ketchum-b1027b71/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                </a>
+                <a href="https://calendly.com/moneyministriesphp" target="_blank" class="social-link" aria-label="Schedule Meeting">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                </a>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 1rem;">
+                <a href="https://calendly.com/moneyministriesphp" target="_blank" style="color: var(--primary-gold); text-decoration: none; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                    Don't know where to start? Get your financial roadmap
+                </a>
+            </p>
+            <p class="footer-text" style="margin-top: 2rem; font-size: 0.875rem;">
+                © 2024 Armena Ketchum Financial Services. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Service Selection Modal -->
+    <div class="selection-modal" id="serviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>How Can I Help You Today?</h3>
+                <p>Select all services that apply to your needs</p>
+            </div>
+            <div class="service-options">
+                <div class="option-checkbox">
+                    <input type="checkbox" id="insuranceOption" name="services" value="Life Insurance Services">
+                    <label for="insuranceOption">
+                        <strong>Life Insurance Services</strong>Term, index, and executive business planning solutions
+                    </label>
+                </div>
+                <div class="option-checkbox">
+                    <input type="checkbox" id="retirementOption" name="services" value="Retirement & Annuity Planning">
+                    <label for="retirementOption">
+                        <strong>Retirement & Annuity Planning</strong>Comprehensive retirement strategies with guaranteed income
+                    </label>
+                </div>
+                <div class="option-checkbox">
+                    <input type="checkbox" id="businessOption" name="services" value="Business Opportunity">
+                    <label for="businessOption">
+                        <strong>Start Your Financial Services Business</strong>Learn how to build your own practice in the financial industry
+                    </label>
+                </div>
+                <div class="option-checkbox">
+                    <input type="checkbox" id="reviewOption" name="services" value="Financial Review">
+                    <label for="reviewOption">
+                        <strong>Complete Financial Review</strong>Comprehensive analysis of your financial situation
+                    </label>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn-primary" onclick="proceedToBooking()">Continue to Booking</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Define modal functions globally
+        function openServiceModal(service) {
+            const modal = document.getElementById('serviceModal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent body scroll
+            
+            // Pre-select service based on which card was clicked
+            if (service === 'retirement') {
+                document.getElementById('retirementOption').checked = true;
+            } else if (service === 'insurance') {
+                document.getElementById('insuranceOption').checked = true;
+            } else if (service === 'business') {
+                document.getElementById('businessOption').checked = true;
+            } else if (service === 'consultation') {
+                document.getElementById('reviewOption').checked = true;
+            }
+            
+            // Ensure modal content is at the top when opened
+            modal.scrollTop = 0;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore body scroll
+            // Clear all checkboxes
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        }
+
+        function proceedToBooking() {
+            const selectedServices = [];
+            document.querySelectorAll('input[name="services"]:checked').forEach(checkbox => {
+                selectedServices.push(checkbox.value);
+            });
+
+            if (selectedServices.length === 0) {
+                alert('Please select at least one service to continue.');
+                return;
+            }
+
+            // Build the Calendly URL with selected services as parameters
+            const calendlyUrl = 'https://calendly.com/moneyministriesphp';
+            const servicesParam = encodeURIComponent(selectedServices.join(', '));
+            const finalUrl = `${calendlyUrl}?services=${servicesParam}`;
+            
+            // Open Calendly in a new tab
+            window.open(finalUrl, '_blank');
+            closeModal();
+        }
+    </script>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('serviceModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+        
+        // Prevent modal content from closing when clicked
+        document.querySelector('.modal-content')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        
+        // Handle escape key to close modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('serviceModal');
+                if (modal.style.display === 'block') {
+                    closeModal();
+                }
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards and testimonial
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.service-card, .testimonial-card');
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY
+
