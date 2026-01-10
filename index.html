@@ -51,9 +51,9 @@
         nav { position: fixed; width: 100%; top: 0; z-index: 1000; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(20px); padding: 1rem; transition: all 0.3s ease; border-bottom: 1px solid rgba(85, 215, 27, 0.1); }
         nav.scrolled { padding: 0.75rem 1rem; box-shadow: var(--shadow-soft); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 1rem; }
-        .logo { display: flex; align-items: center; gap: 0.75rem; }
-        .logo-img { height: 50px; width: auto; }
-        .logo-text { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; background: var(--gradient-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
+        .logo { display: flex; align-items: center; gap: 1rem; }
+        .logo-img { height: 100px; width: auto; }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--deep-navy); letter-spacing: -0.5px; }
         .nav-links { display: flex; gap: 2.5rem; align-items: center; }
         .nav-links a { color: var(--deep-navy); text-decoration: none; font-weight: 500; transition: color 0.3s ease; position: relative; }
         .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary-green); transition: width 0.3s ease; }
@@ -140,7 +140,7 @@
         .carrier-header h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 0.5rem; }
         .carrier-header p { color: var(--rich-teal); font-size: 1.125rem; }
         .carrier-banner { position: relative; width: 100%; overflow: hidden; }
-        .carrier-track { display: flex; animation: scroll-right 35s linear infinite; }
+        .carrier-track { display: flex; animation: scroll-right 15s linear infinite; }
         @keyframes scroll-right { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .carrier-list { display: flex; align-items: center; gap: 4rem; padding: 2rem 0; white-space: nowrap; }
         .carrier-item { display: inline-flex; align-items: center; justify-content: center; min-width: fit-content; position: relative; }
@@ -196,8 +196,45 @@
         .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
         .social-link { width: 40px; height: 40px; background: rgba(85, 215, 27, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-green); text-decoration: none; transition: all 0.3s ease; }
         .social-link:hover { background: var(--gradient-green); color: white; transform: translateY(-3px); }
-        @media (max-width: 968px) { .hero { padding: 6rem 1rem 3rem; } .portrait-content { grid-template-columns: 1fr; gap: 3rem; } .portrait-visual { order: -1; } .portrait-container { max-width: 350px; } .portrait { height: 350px; background-position: center top; } .nav-links { display: none; } .hero-stats { gap: 1.5rem; } .stat-number { font-size: 2rem; } .testimonials-grid { grid-template-columns: 1fr; } .business-card { padding: 1.5rem; flex-direction: column; text-align: center; gap: 1rem; } .business-card-content { flex-direction: column; text-align: center; gap: 1rem; } .business-card-text h3 { font-size: 1.5rem; } .business-card-text p { font-size: 1rem; } .business-card-arrow { transform: rotate(90deg); } }
-        @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; padding: 0; } .service-card { margin: 0 1rem; } .hero-stats { justify-content: space-around; } .modal-content { padding: 2rem; width: 95%; margin: 1rem auto; } h1 { font-size: 2rem; } h2 { font-size: 1.75rem; } .testimonial-card { margin: 0 1rem; } .quote-icon { font-size: 3rem; top: 5px; left: 15px; } .cta-button-large { padding: 1rem 2rem; font-size: 1rem; } .badge { font-size: 0.75rem; padding: 0.4rem 0.8rem; } .hero-cta-group { flex-direction: column; align-items: center; } .hero-cta-primary, .hero-cta-secondary { width: 100%; max-width: 280px; text-align: center; } .legacy-pillars { grid-template-columns: 1fr; } .modal-actions { flex-direction: column-reverse; } .btn-primary, .btn-secondary { width: 100%; padding: 1rem; } }
+        @media (max-width: 968px) { 
+            .hero { padding: 6rem 1rem 3rem; } 
+            .portrait-content { grid-template-columns: 1fr; gap: 3rem; } 
+            .portrait-visual { order: -1; } 
+            .portrait-container { max-width: 350px; } 
+            .portrait { height: 350px; background-position: center top; } 
+            .nav-links { display: none; } 
+            .hero-stats { gap: 1.5rem; } 
+            .stat-number { font-size: 2rem; } 
+            .testimonials-grid { grid-template-columns: 1fr; } 
+            .business-card { padding: 1.5rem; flex-direction: column; text-align: center; gap: 1rem; } 
+            .business-card-content { flex-direction: column; text-align: center; gap: 1rem; } 
+            .business-card-text h3 { font-size: 1.5rem; } 
+            .business-card-text p { font-size: 1rem; } 
+            .business-card-arrow { transform: rotate(90deg); }
+            .logo-img { height: 80px; }
+            .logo-text { font-size: 1.8rem; }
+            .carrier-track { animation: scroll-right 12s linear infinite; }
+        }
+        @media (max-width: 640px) { 
+            .services-grid { grid-template-columns: 1fr; padding: 0; } 
+            .service-card { margin: 0 1rem; } 
+            .hero-stats { justify-content: space-around; } 
+            .modal-content { padding: 2rem; width: 95%; margin: 1rem auto; } 
+            h1 { font-size: 2rem; } 
+            h2 { font-size: 1.75rem; } 
+            .testimonial-card { margin: 0 1rem; } 
+            .quote-icon { font-size: 3rem; top: 5px; left: 15px; } 
+            .cta-button-large { padding: 1rem 2rem; font-size: 1rem; } 
+            .badge { font-size: 0.75rem; padding: 0.4rem 0.8rem; } 
+            .hero-cta-group { flex-direction: column; align-items: center; } 
+            .hero-cta-primary, .hero-cta-secondary { width: 100%; max-width: 280px; text-align: center; } 
+            .legacy-pillars { grid-template-columns: 1fr; } 
+            .modal-actions { flex-direction: column-reverse; } 
+            .btn-primary, .btn-secondary { width: 100%; padding: 1rem; }
+            .logo-img { height: 70px; }
+            .logo-text { font-size: 1.6rem; }
+            .carrier-track { animation: scroll-right 10s linear infinite; }
+        }
     </style>
 </head>
 <body>
@@ -206,7 +243,7 @@
         <div class="nav-container">
             <div class="logo">
                 <img src="https://i.postimg.cc/76NLJ8LH/hggc.png" alt="Money Ministries Logo" class="logo-img">
-                <span class="logo-text">Money Ministries</span>
+                <span class="logo-text">Money Making Ministries</span>
             </div>
             <div class="nav-links">
                 <a href="#services">Services</a>
@@ -229,7 +266,7 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Years Experience</span></div>
-                    <div class="stat"><span class="stat-number">$2M+</span><span class="stat-label">Debt Resolved</span></div>
+                    <div class="stat"><span class="stat-number">$3M+</span><span class="stat-label">Debt Resolved</span></div>
                     <div class="stat"><span class="stat-number">1000+</span><span class="stat-label">Lives Changed</span></div>
                 </div>
             </div>
@@ -356,7 +393,7 @@
     <section class="portrait-section">
         <div class="portrait-content">
             <div class="portrait-text">
-                <div class="badge">Retirement Specialist, Asset Optimization Specialist and Financial Broker</div>
+                <div class="badge">Retirement and Asset Optimization Specialist</div>
                 <h2>Meet <span>Armena Ketchum</span></h2>
                 <p>Transforming financial challenges into opportunities, I specialize in helping individuals and families achieve true financial freedom and build lasting generational wealth.</p>
                 <p>My approach combines strategic debt resolution, comprehensive retirement planning, and tailored insurance solutions to create a complete financial roadmap for your success.</p>
