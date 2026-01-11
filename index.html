@@ -250,14 +250,15 @@
             .logo-img { height: 70px; }
             .logo-text { font-size: 1.3rem; }
             .footer-logo-text { font-size: 1.2rem; }
-            .step-card { padding: 1.5rem; }
-            .step-card-inner { flex-direction: column; text-align: center; gap: 1rem; }
+            .step-card { padding: 1.5rem; text-align: center; }
+            .step-card-inner { flex-direction: column; text-align: center; gap: 1rem; align-items: center; }
             .step-icon { margin: 0 auto; }
             .step-header { justify-content: center; flex-direction: column; align-items: center; gap: 0.5rem; }
             .step-header .step-divider { width: 30px; height: 4px; }
             .step-title { text-align: center; }
-            .step-list li { padding-left: 0; text-align: center; }
-            .step-list li::before { display: none; }
+            .step-content { width: 100%; display: flex; flex-direction: column; align-items: center; }
+            .step-list { width: 100%; display: flex; flex-direction: column; align-items: center; }
+            .step-list li { padding-left: 0; text-align: center; width: 100%; }
         }
     </style>
 </head>
