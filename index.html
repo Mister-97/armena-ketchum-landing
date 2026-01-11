@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    
-    <!-- Primary Meta Tags -->
     <title>Money Ministries - Your Path to Financial Freedom and Security Starts Here</title>
     <meta name="title" content="Money Ministries - Your Path to Financial Freedom and Security Starts Here">
     <meta name="description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Over 10 years of experience helping clients achieve financial freedom.">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mister-97.github.io/armena-ketchum-landing/">
     <meta property="og:title" content="Money Ministries - Your Path to Financial Freedom and Security Starts Here">
     <meta property="og:description" content="Transform your financial future with expert debt mediation, retirement planning, and life insurance solutions. Purpose Over Passion!">
     <meta property="og:image" content="https://i.postimg.cc/76NLJ8LH/hggc.png">
-    
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mister-97.github.io/armena-ketchum-landing/">
     <meta property="twitter:title" content="Money Ministries - Your Path to Financial Freedom and Security Starts Here">
@@ -46,8 +40,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { overflow-x: hidden; width: 100%; }
         body { font-family: 'DM Sans', sans-serif; color: var(--text-dark); background: var(--warm-white); overflow-x: hidden; line-height: 1.6; width: 100%; min-width: 100%; position: relative; }
-        .background-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; z-index: 0; background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, var(--primary-green) 35px, var(--primary-green) 70px), repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--rich-teal) 35px, var(--rich-teal) 70px); animation: float 30s ease-in-out infinite; }
-        @keyframes float { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-10px, -10px) scale(1.02); } }
+        .background-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.03; z-index: 0; }
         nav { position: fixed; width: 100%; top: 0; z-index: 1000; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(20px); padding: 1rem; transition: all 0.3s ease; border-bottom: 1px solid rgba(85, 215, 27, 0.1); }
         nav.scrolled { padding: 0.75rem 1rem; box-shadow: var(--shadow-soft); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 1rem; }
@@ -60,15 +53,16 @@
         .nav-links a:hover::after { width: 100%; }
         .cta-button { background: var(--gradient-green); color: white; padding: 0.75rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(85, 215, 27, 0.3); }
         .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(85, 215, 27, 0.4); }
-        .hero { padding: 8rem 1rem 5rem; min-height: 90vh; display: flex; align-items: center; position: relative; background: linear-gradient(135deg, rgba(250, 248, 245, 0.95) 0%, rgba(85, 215, 27, 0.05) 50%, rgba(15, 27, 46, 0.02) 100%); }
+        .hero { padding: 12rem 1rem 6rem; min-height: 95vh; display: flex; align-items: center; position: relative; background: linear-gradient(135deg, rgba(250, 248, 245, 0.95) 0%, rgba(85, 215, 27, 0.05) 50%, rgba(15, 27, 46, 0.02) 100%); }
         .hero-content { max-width: 1000px; margin: 0 auto; text-align: center; position: relative; z-index: 1; width: 100%; padding: 0 1rem; }
         .hero-text { animation: fadeInUp 1s ease-out; }
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         .badge { display: inline-block; background: rgba(85, 215, 27, 0.15); color: var(--primary-green-dark); padding: 0.5rem 1.25rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1.5rem; animation: pulse 2s ease-in-out infinite; border: 1px solid rgba(85, 215, 27, 0.3); }
         @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.15; color: var(--deep-navy); margin-bottom: 1.5rem; }
-        h1 span { background: var(--gradient-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-description { font-size: 1.25rem; color: var(--rich-teal); margin-bottom: 2.5rem; line-height: 1.7; max-width: 700px; margin-left: auto; margin-right: auto; }
+        h1 span { background: var(--gradient-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-description { font-size: 1.25rem; color: var(--rich-teal); margin-bottom: 1rem; line-height: 1.7; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .hero-quote { font-size: 1.1rem; font-style: italic; color: var(--deep-navy); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; position: relative; padding: 0.75rem 1.5rem; }
         .hero-cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
         .hero-cta-primary { background: var(--gradient-green); color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: var(--shadow-green); }
         .hero-cta-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(85, 215, 27, 0.35); }
@@ -78,19 +72,47 @@
         .stat { text-align: center; }
         .stat-number { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary-green); display: block; }
         .stat-label { font-size: 0.875rem; color: var(--rich-teal); text-transform: uppercase; letter-spacing: 1px; }
-        .mission-section { padding: 5rem 1rem; background: var(--gradient-navy-green); position: relative; overflow: hidden; }
-        .mission-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2355d71b' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
-        .mission-content { max-width: 1000px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+        .mission-section { padding: 5rem 1rem 2rem; background: var(--gradient-navy-green); position: relative; overflow: hidden; }
+        .mission-content { max-width: 1200px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
         .mission-section h2 { color: white; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; }
         .mission-section h2 span { color: var(--primary-green); }
-        .mission-text { color: rgba(255, 255, 255, 0.9); font-size: 1.25rem; line-height: 1.8; margin-bottom: 2rem; }
-        .legacy-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .pillar { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem; border: 1px solid rgba(85, 215, 27, 0.2); transition: all 0.3s ease; }
+        .mission-text { color: rgba(255, 255, 255, 0.9); font-size: 1.25rem; line-height: 1.8; margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .legacy-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 0; }
+        .pillar { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 20px; padding: 2.5rem; border: 1px solid rgba(85, 215, 27, 0.2); transition: all 0.3s ease; }
         .pillar:hover { transform: translateY(-5px); border-color: var(--primary-green); background: rgba(255, 255, 255, 0.08); }
-        .pillar-icon { width: 60px; height: 60px; background: var(--gradient-green); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
-        .pillar-icon svg { width: 30px; height: 30px; fill: white; }
-        .pillar h3 { color: var(--primary-green); font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.75rem; }
-        .pillar p { color: rgba(255, 255, 255, 0.8); font-size: 1rem; line-height: 1.6; }
+        .pillar-icon { width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .pillar-icon svg { width: 35px; height: 35px; fill: white; }
+        .pillar h3 { color: var(--primary-green); font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem; }
+        .pillar p { color: rgba(255, 255, 255, 0.85); font-size: 1rem; line-height: 1.7; }
+        .steps-section { padding: 4rem 1rem 5rem; background: transparent; position: relative; }
+        .steps-wrapper { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        .steps-header { text-align: center; margin-bottom: 3rem; }
+        .steps-header h3 { font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 3.5vw, 2.5rem); color: white; margin-bottom: 1rem; }
+        .steps-header h3 span { color: var(--primary-green); }
+        .steps-header-line { width: 200px; height: 4px; background: var(--gradient-green); margin: 0 auto; border-radius: 2px; }
+        .steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .step-card { background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%); backdrop-filter: blur(20px); border-radius: 24px; padding: 2rem; border: 1px solid rgba(85, 215, 27, 0.2); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; }
+        .step-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at top left, rgba(85, 215, 27, 0.15) 0%, transparent 50%); opacity: 0; transition: opacity 0.4s ease; }
+        .step-card::after { content: ''; position: absolute; bottom: 0; right: 0; width: 150px; height: 150px; background: radial-gradient(circle, rgba(85, 215, 27, 0.1) 0%, transparent 70%); opacity: 0; transition: opacity 0.4s ease; }
+        .step-card:hover { transform: translateY(-10px) scale(1.02); border-color: var(--primary-green); box-shadow: 0 30px 60px rgba(85, 215, 27, 0.25), 0 0 0 1px rgba(85, 215, 27, 0.3); }
+        .step-card:hover::before, .step-card:hover::after { opacity: 1; }
+        .step-card-inner { display: flex; align-items: flex-start; gap: 1.5rem; position: relative; z-index: 1; }
+        .step-icon { width: 75px; height: 75px; min-width: 75px; background: linear-gradient(145deg, rgba(85, 215, 27, 0.25) 0%, rgba(85, 215, 27, 0.1) 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(85, 215, 27, 0.3); transition: all 0.4s ease; position: relative; }
+        .step-icon::before { content: ''; position: absolute; inset: -3px; border-radius: 22px; background: var(--gradient-green); opacity: 0; transition: opacity 0.3s ease; z-index: -1; }
+        .step-card:hover .step-icon { background: var(--gradient-green); border-color: transparent; transform: rotate(-5deg) scale(1.1); box-shadow: 0 10px 30px rgba(85, 215, 27, 0.4); }
+        .step-card:hover .step-icon::before { opacity: 0.3; }
+        .step-icon svg { width: 35px; height: 35px; stroke: var(--primary-green); fill: none; stroke-width: 1.5; transition: all 0.3s ease; }
+        .step-card:hover .step-icon svg { stroke: white; }
+        .step-content { flex: 1; }
+        .step-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .step-number { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 2px; }
+        .step-divider { width: 4px; height: 20px; background: var(--gradient-green); border-radius: 2px; }
+        .step-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: white; text-transform: uppercase; letter-spacing: 1px; }
+        .step-list { list-style: none; margin-top: 0.75rem; }
+        .step-list li { color: rgba(255, 255, 255, 0.75); font-size: 0.95rem; line-height: 1.7; position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; transition: all 0.3s ease; }
+        .step-list li::before { content: ''; position: absolute; left: 0; top: 0.6rem; width: 6px; height: 6px; background: var(--primary-green); border-radius: 50%; transition: all 0.3s ease; }
+        .step-card:hover .step-list li { color: rgba(255, 255, 255, 0.95); }
+        .step-card:hover .step-list li::before { box-shadow: 0 0 10px rgba(85, 215, 27, 0.6); }
         .services { padding: 5rem 1rem; background: white; position: relative; width: 100%; }
         .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; padding: 0 1rem; }
         h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: var(--deep-navy); margin-bottom: 1rem; }
@@ -111,9 +133,8 @@
         .business-card-text p { color: rgba(255, 255, 255, 0.9); font-size: 1.125rem; }
         .business-card-arrow { font-size: 2rem; color: var(--primary-green); animation: arrow-bounce 2s ease-in-out infinite; }
         @keyframes arrow-bounce { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(10px); } }
-        .service-icon { width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; animation: float-icon 3s ease-in-out infinite; }
+        .service-icon { width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
         .service-icon svg { width: 35px; height: 35px; fill: white; }
-        @keyframes float-icon { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
         .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--deep-navy); margin-bottom: 1rem; }
         .service-description { color: var(--rich-teal); margin-bottom: 1.5rem; line-height: 1.6; }
         .service-features { list-style: none; }
@@ -132,9 +153,6 @@
         @keyframes morphing { 0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } 50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; } }
         .portrait { width: 100%; height: 450px; border-radius: inherit; position: relative; overflow: hidden; background-image: url('https://i.imgur.com/glxR7pD.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: var(--warm-white); }
         .portrait-img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
-        .portrait::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(85, 215, 27, 0.1) 0%, rgba(28, 85, 96, 0.05) 100%); pointer-events: none; z-index: 1; }
-        .portrait::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); animation: rotate 20s linear infinite; pointer-events: none; z-index: 2; }
-        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         .carrier-section { padding: 3rem 0; background: var(--soft-green-bg); overflow: hidden; position: relative; }
         .carrier-header { text-align: center; margin-bottom: 2rem; padding: 0 1rem; }
         .carrier-header h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 0.5rem; }
@@ -143,13 +161,10 @@
         .carrier-track { display: flex; animation: scroll-right 15s linear infinite; }
         @keyframes scroll-right { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .carrier-list { display: flex; align-items: center; gap: 4rem; padding: 2rem 0; white-space: nowrap; }
-        .carrier-item { display: inline-flex; align-items: center; justify-content: center; min-width: fit-content; position: relative; }
+        .carrier-item { display: inline-flex; align-items: center; justify-content: center; min-width: fit-content; }
         .carrier-logo { height: 50px; width: auto; max-width: 140px; object-fit: contain; opacity: 0.7; transition: all 0.3s ease; cursor: default; filter: grayscale(20%); }
         .carrier-logo:hover { opacity: 1; transform: scale(1.1); filter: grayscale(0%); }
         .carrier-separator { width: 4px; height: 4px; background: var(--primary-green); border-radius: 50%; opacity: 0.5; }
-        .carrier-banner::before, .carrier-banner::after { content: ''; position: absolute; top: 0; width: 100px; height: 100%; z-index: 1; pointer-events: none; }
-        .carrier-banner::before { left: 0; background: linear-gradient(90deg, var(--soft-green-bg) 0%, transparent 100%); }
-        .carrier-banner::after { right: 0; background: linear-gradient(90deg, transparent 0%, var(--soft-green-bg) 100%); }
         .testimonials { padding: 5rem 1rem; background: white; width: 100%; }
         .testimonials-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
         .testimonial-card { background: var(--warm-white); border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-soft); position: relative; transition: all 0.3s ease; }
@@ -181,7 +196,6 @@
         .btn-secondary { background: var(--warm-white); color: var(--deep-navy); border: 2px solid rgba(15, 27, 46, 0.1); }
         .btn-secondary:hover { background: rgba(15, 27, 46, 0.05); border-color: rgba(15, 27, 46, 0.2); }
         .cta-section { padding: 5rem 1rem; background: var(--gradient-navy-green); text-align: center; position: relative; overflow: hidden; width: 100%; }
-        .cta-section::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(85, 215, 27, 0.1) 0%, transparent 60%); animation: rotate 30s linear infinite; }
         .cta-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
         .cta-section h2 { color: white; margin-bottom: 1.5rem; }
         .cta-section p { color: rgba(255, 255, 255, 0.9); font-size: 1.25rem; margin-bottom: 2rem; }
@@ -197,7 +211,7 @@
         .social-link { width: 40px; height: 40px; background: rgba(85, 215, 27, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-green); text-decoration: none; transition: all 0.3s ease; }
         .social-link:hover { background: var(--gradient-green); color: white; transform: translateY(-3px); }
         @media (max-width: 968px) { 
-            .hero { padding: 6rem 1rem 3rem; } 
+            .hero { padding: 10rem 1rem 4rem; } 
             .portrait-content { grid-template-columns: 1fr; gap: 3rem; } 
             .portrait-visual { order: -1; } 
             .portrait-container { max-width: 350px; } 
@@ -213,9 +227,11 @@
             .business-card-arrow { transform: rotate(90deg); }
             .logo-img { height: 80px; }
             .logo-text { font-size: 1.8rem; }
-            .carrier-track { animation: scroll-right 12s linear infinite; }
+            .steps-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+            .legacy-pillars { grid-template-columns: 1fr; }
         }
         @media (max-width: 640px) { 
+            .hero { padding: 9rem 1rem 3rem; }
             .services-grid { grid-template-columns: 1fr; padding: 0; } 
             .service-card { margin: 0 1rem; } 
             .hero-stats { justify-content: space-around; } 
@@ -228,12 +244,16 @@
             .badge { font-size: 0.75rem; padding: 0.4rem 0.8rem; } 
             .hero-cta-group { flex-direction: column; align-items: center; } 
             .hero-cta-primary, .hero-cta-secondary { width: 100%; max-width: 280px; text-align: center; } 
-            .legacy-pillars { grid-template-columns: 1fr; } 
             .modal-actions { flex-direction: column-reverse; } 
             .btn-primary, .btn-secondary { width: 100%; padding: 1rem; }
             .logo-img { height: 70px; }
             .logo-text { font-size: 1.6rem; }
-            .carrier-track { animation: scroll-right 10s linear infinite; }
+            .step-card { padding: 1.5rem; }
+            .step-card-inner { flex-direction: column; text-align: center; gap: 1rem; }
+            .step-icon { margin: 0 auto; }
+            .step-header { justify-content: center; flex-wrap: wrap; }
+            .step-list li { padding-left: 0; text-align: center; }
+            .step-list li::before { display: none; }
         }
     </style>
 </head>
@@ -258,8 +278,9 @@
             <div class="hero-text">
                 <h1>Your Path to <span>Financial Freedom</span> and Security Starts Here</h1>
                 <p class="hero-description">
-                   Specialized Expertise in Retirement Planning: Investment Strategies using Annuities; Asset Optimization, and Comprehensive Life and Healthcare Benefits. We transform financial challenges into Freedom, Security, and Generational Wealth.
+                   Specialized Expertise in Retirement Planning: Investment Strategies Using Annuities; Asset Optimization, and Comprehensive Life and Healthcare Benefits.
                 </p>
+                <p class="hero-quote">We Transform Financial Challenges into Freedom, Security, and Generational Wealth.</p>
                 <div class="hero-cta-group">
                     <a href="https://calendly.com/moneyministriesphp" target="_blank" class="hero-cta-primary">Schedule Free Consultation</a>
                     <a href="#services" class="hero-cta-secondary">Explore Services</a>
@@ -275,22 +296,126 @@
     <section class="mission-section">
         <div class="mission-content">
             <h2>Building <span>Generational Wealth</span> and Lasting Legacies</h2>
-            <p class="mission-text">Empowering businesses and families with elite financial knowledge to apply, preserve and protect assests and capital while sustaining a lasting legacies</p>
-            <div class="legacy-pillars">
-                <div class="pillar">
-                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg></div>
-                    <h3>Financial Security</h3>
-                    <p>Build a fortress around your family's future with strategic planning and protected investments that weather any storm.</p>
+            <p class="mission-text">Empowering Businesses and Families with Elite Financial Knowledge to Apply, Preserve, and Protect Assets and Capital While Sustaining Lasting Legacies</p>
+        </div>
+        <div class="steps-section">
+            <div class="steps-wrapper">
+                <div class="steps-header">
+                    <h3>The 6 Steps Toward Reaching <span>Your Financial Goals</span></h3>
+                    <div class="steps-header-line"></div>
                 </div>
-                <div class="pillar">
-                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
-                    <h3>Generational Wealth</h3>
-                    <p>Create wealth that multiplies and transfers seamlessly to your children and grandchildren through smart strategies.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
-                    <h3>Lasting Legacy</h3>
-                    <p>Leave behind more than money—create a legacy of financial wisdom, security, and opportunity for those you love.</p>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 1</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Increase Cash Flow</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Earn Additional Income</li>
+                                    <li>Manage Expenses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 4</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Proper Protection</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Protect Against Loss of Income</li>
+                                    <li>Protect Family Assets</li>
+                                    <li>Long-Term Care and Disability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 2</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Manage Debt</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Strive to Eliminate Credit Card Debt</li>
+                                    <li>Consolidate Debt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 5</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Emergency Fund</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Save at Least 3-6 Months of Income</li>
+                                    <li>Prepare for Emergency Expenses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="M12 16v4"/><path d="M8 20h8"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 3</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Long-Term Planning</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Outpace Inflation and Reduce Taxation</li>
+                                    <li>Focus on Long-Term Planning Not Short-Term Results</li>
+                                    <li>Retirement Planning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card-inner">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <span class="step-number">Step 6</span>
+                                    <span class="step-divider"></span>
+                                    <span class="step-title">Additional Services</span>
+                                </div>
+                                <ul class="step-list">
+                                    <li>Wealth Replacement</li>
+                                    <li>Estate Planning Solutions</li>
+                                    <li>Tax Diversification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,35 +423,35 @@
     <section class="services" id="services">
         <div class="section-header">
             <h2>Transform Your Financial Future</h2>
-            <p class="section-subtitle">Expert guidance tailored to your unique financial journey</p>
+            <p class="section-subtitle">Expert Guidance Tailored to Your Unique Financial Journey</p>
         </div>
         <div class="services-grid">
             <div class="service-card" onclick="window.open('https://www.sm.phpdebtsolutions.com/links/40755/1506?utm_source=ig&utm_medium=social&utm_content=link_in_bio', '_blank')">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
                 <h3>Debt Mediator</h3>
-                <p class="service-description">Strategic Debt Resolution that protects your assets while negotiating optimal settlements with creditors.</p>
+                <p class="service-description">Strategic Debt Resolution That Protects Your Assets While Negotiating Optimal Settlements with Creditors.</p>
                 <ul class="service-features">
-                    <li>Creditor Negotiation & Settlement</li>
+                    <li>Creditor Negotiation and Settlement</li>
                     <li>Asset Optimization</li>
                     <li>Credit Score Rehabilitation</li>
-                    <li>Legal Support & Advocacy</li>
+                    <li>Legal Support and Advocacy</li>
                 </ul>
             </div>
             <div class="service-card" onclick="openServiceModal('retirement')">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg></div>
                 <h3>Retirement and Annuity Specialist</h3>
-                <p class="service-description">Comprehensive Retirement Planning and annuity strategies that ensure your golden years are secure with guaranteed lifetime income.</p>
+                <p class="service-description">Comprehensive Retirement Planning and Annuity Strategies That Ensure Your Golden Years Are Secure with Guaranteed Lifetime Income.</p>
                 <ul class="service-features">
-                    <li>401(k) & IRA Rollover</li>
-                    <li>Fixed & Index Annuity Analysis</li>
+                    <li>401(k) and IRA Rollover</li>
+                    <li>Fixed and Index Annuity Analysis</li>
                     <li>Lifetime Income Available</li>
-                    <li>Social Security & Tax Defferal</li>
+                    <li>Social Security and Tax Deferral</li>
                 </ul>
             </div>
             <div class="service-card" onclick="openServiceModal('insurance')">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91c4.59-1.15 8-5.86 8-10.91V5l-8-3z"/></svg></div>
-                <h3>Life Insurance Broker / Agent</h3>
-                <p class="service-description">Professional World Class Partnerships providing mulitple options from Top Rated Rarriers offering maximum protection and benefit packages. </p>
+                <h3>Life Insurance Broker/Agent</h3>
+                <p class="service-description">Professional World-Class Partnerships Providing Multiple Options from Top-Rated Carriers Offering Maximum Protection and Benefit Packages.</p>
                 <ul class="service-features">
                     <li>Term Life Insurance</li>
                     <li>Index Universal Life</li>
@@ -340,7 +465,7 @@
                 <div class="business-card-icon"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></div>
                 <div class="business-card-text">
                     <h3>Looking to Start a Business in the Financial Industry?</h3>
-                    <p>Join our team and build your own successful financial services practice with expert mentorship and support</p>
+                    <p>Join Our Team and Build Your Own Successful Financial Services Practice with Expert Mentorship and Support</p>
                 </div>
             </div>
             <div class="business-card-arrow">→</div>
@@ -349,7 +474,7 @@
     <section class="testimonials" id="testimonials">
         <div class="section-header">
             <h2>Client Success Stories</h2>
-            <p class="section-subtitle">Real results from real people building their legacies</p>
+            <p class="section-subtitle">Real Results from Real People Building Their Legacies</p>
         </div>
         <div class="testimonials-grid">
             <div class="testimonial-card">
@@ -395,13 +520,13 @@
             <div class="portrait-text">
                 <div class="badge">Retirement and Asset Optimization Specialist</div>
                 <h2>Meet <span>Armena Ketchum</span></h2>
-                <p>University of Wisconsin -Madison Alumni and Entrepreneur. Ketchum started her career as a United States government employee, advancing to the City of Chicago as a Librarian. </p>
-                <p>In 2018, ketchum bridged into Entrepreneurship and Ownership was established; creating Money Making Ministries./p>
+                <p>University of Wisconsin-Madison Alumni and Entrepreneur. Ketchum started her career as a United States Government Employee, advancing to the City of Chicago as a Librarian.</p>
+                <p>In 2018, Ketchum bridged into Entrepreneurship and Ownership was established; creating Money Making Ministries.</p>
                 <ul class="expertise-list">
                     <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2023 Million Dollar Annuity Circle Inductee</li>
-                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2024 Most Valuable Player in Intergrioty Marketing Group</li>
-                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2024 Top Writing Agent with American National Incurance Company</li>
-                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>American National (ANICO) holds an A (Excellent) rating from A.M. Best and S&P</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2024 Most Valuable Player in Integrity Marketing Group</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>2024 Top Writing Agent with American National Insurance Company</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>American National (ANICO) Holds an A (Excellent) Rating from A.M. Best and S&P</li>
                 </ul>
             </div>
             <div class="portrait-visual">
@@ -416,7 +541,7 @@
     <section class="carrier-section">
         <div class="carrier-header">
             <h3>Trusted Insurance Partners</h3>
-            <p>Working with the industry's most reliable carriers</p>
+            <p>Working with the Industry's Most Reliable Carriers</p>
         </div>
         <div class="carrier-banner">
             <div class="carrier-track">
@@ -446,7 +571,7 @@
     <section class="cta-section" id="contact">
         <div class="cta-content">
             <h2>Ready to Take Control of Your Financial Future?</h2>
-            <p>Let's create a personalized strategy that turns your financial goals into reality and builds a legacy for generations</p>
+            <p>Let's Create a Personalized Strategy That Turns Your Financial Goals into Reality and Builds a Legacy for Generations</p>
             <a href="https://calendly.com/moneyministriesphp" target="_blank" class="cta-button-large">Schedule Your Free Consultation</a>
         </div>
     </section>
@@ -456,27 +581,27 @@
                 <img src="https://i.postimg.cc/76NLJ8LH/hggc.png" alt="Money Ministries Logo">
                 <span class="footer-logo-text">Money Ministries</span>
             </div>
-            <p class="footer-text">Your trusted partner in financial freedom and generational wealth</p>
+            <p class="footer-text">Your Trusted Partner in Financial Freedom and Generational Wealth</p>
             <div class="social-links">
                 <a href="mailto:moneyministriesphp@gmail.com" class="social-link" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
                 <a href="https://www.linkedin.com/in/armena-ketchum-b1027b71/" target="_blank" class="social-link" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
                 <a href="https://calendly.com/moneyministriesphp" target="_blank" class="social-link" aria-label="Schedule Meeting"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg></a>
             </div>
-            <p style="margin-top: 1.5rem; font-size: 1rem;"><a href="https://calendly.com/moneyministriesphp" target="_blank" style="color: var(--primary-green); text-decoration: none; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Don't know where to start? Get your financial roadmap</a></p>
-            <p class="footer-text" style="margin-top: 2rem; font-size: 0.875rem;">© 2024 Money Ministries Financial Services. All rights reserved.</p>
+            <p style="margin-top: 1.5rem; font-size: 1rem;"><a href="https://calendly.com/moneyministriesphp" target="_blank" style="color: var(--primary-green); text-decoration: none;">Don't Know Where to Start? Get Your Financial Roadmap</a></p>
+            <p class="footer-text" style="margin-top: 2rem; font-size: 0.875rem;">© 2024 Money Ministries Financial Services. All Rights Reserved.</p>
         </div>
     </footer>
     <div class="selection-modal" id="serviceModal">
         <div class="modal-content">
             <div class="modal-header">
                 <h3>How Can I Help You Today?</h3>
-                <p>Select all services that apply to your needs</p>
+                <p>Select All Services That Apply to Your Needs</p>
             </div>
             <div class="service-options">
-                <div class="option-checkbox"><input type="checkbox" id="insuranceOption" name="services" value="Life Insurance Services"><label for="insuranceOption"><strong>Life Insurance Services</strong>Term, index, and executive business planning solutions</label></div>
-                <div class="option-checkbox"><input type="checkbox" id="retirementOption" name="services" value="Retirement and Annuity Planning"><label for="retirementOption"><strong>Retirement and Annuity Planning</strong>Comprehensive retirement strategies with guaranteed income</label></div>
-                <div class="option-checkbox"><input type="checkbox" id="businessOption" name="services" value="Business Opportunity"><label for="businessOption"><strong>Start Your Financial Services Business</strong>Learn how to build your own practice in the financial industry</label></div>
-                <div class="option-checkbox"><input type="checkbox" id="reviewOption" name="services" value="Financial Review"><label for="reviewOption"><strong>Complete Financial Review</strong>Comprehensive analysis of your financial situation</label></div>
+                <div class="option-checkbox"><input type="checkbox" id="insuranceOption" name="services" value="Life Insurance Services"><label for="insuranceOption"><strong>Life Insurance Services</strong>Term, Index, and Executive Business Planning Solutions</label></div>
+                <div class="option-checkbox"><input type="checkbox" id="retirementOption" name="services" value="Retirement and Annuity Planning"><label for="retirementOption"><strong>Retirement and Annuity Planning</strong>Comprehensive Retirement Strategies with Guaranteed Income</label></div>
+                <div class="option-checkbox"><input type="checkbox" id="businessOption" name="services" value="Business Opportunity"><label for="businessOption"><strong>Start Your Financial Services Business</strong>Learn How to Build Your Own Practice in the Financial Industry</label></div>
+                <div class="option-checkbox"><input type="checkbox" id="reviewOption" name="services" value="Financial Review"><label for="reviewOption"><strong>Complete Financial Review</strong>Comprehensive Analysis of Your Financial Situation</label></div>
             </div>
             <div class="modal-actions">
                 <button class="btn-secondary" onclick="closeModal()">Cancel</button>
